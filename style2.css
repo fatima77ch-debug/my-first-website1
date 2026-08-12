@@ -1,0 +1,354 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(19, 19, 65);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+section {
+    scroll-margin-top: 90px;
+}
+html{
+    scroll-behavior: smooth;
+}
+ header *{
+    background-color: none !important;
+    background-color: transparent !important;
+ }
+
+header {
+    position: sticky;
+    top: 0;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+    background-color: rgb(69, 69, 136);
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+header #logo {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 8px;
+}
+
+header #logo span {
+    background-color: transparent;
+    color: rgb(149, 156, 199);
+    font-weight: bold;
+    font-size: 40px;
+    /* align-items: center; */
+}
+
+nav ul a:hover {
+    background-color: white;
+    color: rgb(209, 209, 233);
+    border-radius: 50px;
+    padding: 14px;
+    box-shadow: 0 0 17px #2b2dbe, 0 0 30px #5f77e0;
+}
+
+.navbutn {
+    border: 1px solid rgb(96, 98, 201);
+    border-radius: 50px;
+    padding: 17px 33px;
+    display: inline-block;
+    background-color: rgb(69, 69, 136);
+}
+
+.navbutn:hover {
+    background-color: white;
+    color: rgb(169, 169, 202);
+    border-radius: 50px;
+    padding: 14px;
+    box-shadow: 0 0 17px #2b2dbe, 0 0 30px #5f77e0;
+}
+
+#herosection {
+    line-height: 1.5;
+}
+
+#about {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    /* width: 100%; */
+    min-height: 100vh;
+    font-size: 20px;
+}
+
+.herocontent .top {
+    border: 1px solid rgb(96, 98, 201);
+    border-radius: 50px;
+    padding: 17px 33px;
+    background-color: rgb(69, 69, 136);
+}
+
+.herocontent .top:hover {
+    background-color: white;
+    color: rgb(61, 61, 90);
+    border-radius: 50px;
+    padding: 14px;
+    box-shadow: 0 0 17px #2b2dbe, 0 0 30px #5f77e0;
+}
+
+#about .herocontent {
+    align-items: center;
+    width: 50%;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+.herocontent h1 {
+    padding-top: 20px;
+    font-size: 70px;
+    color: rgb(100, 114, 197);
+}
+
+.herocontent p {
+    font-size: 17px;
+}
+
+#about.img,
+.heropic img {
+    max-height: 380px;
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#about .stats {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#about .stats h3 {
+    color: rgb(100, 114, 197);
+}
+
+.services-section {
+    min-height: 100vh;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-size: 3rem;
+}
+
+
+.service-card * {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+
+.service-card {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 16px;
+    padding: 30px 20px;
+    width: 220px;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+.service-card .icon {
+    font-size: 36px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-card:hover {
+    transform: translateY(-9px);
+    border: 1px solid #838bcf;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+}
+
+
+.service-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+
+.service-card p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #e2e8f0;
+}
+
+.clients-section {
+    box-sizing: border-box;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.section-title {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* Outer Container */
+.table-container {
+    display: flex;
+    max-width: 80vw;
+    max-height: 80vh;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Left Cyan Card */
+.left-card {
+    background-color: #666fec;
+   
+    color: #0d1b2a;
+    font-weight: 700;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px 0;
+    text-align: left;
+}
+
+.left-card div {
+    background-color: transparent;
+    padding: 10px 0;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+/* Right Rows Area */
+.right-rows {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Alternating Rows (Dark blue shades) */
+.row-item {
+    padding: 18px 20px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.row-item:nth-child(odd) {
+    background-color: #37307e;
+}
+
+.row-item:nth-child(even) {
+    background-color: #0f105c;
+}
+/* Center Layout & Full Screen */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.section-title {
+  color: #ffffff;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Form Container */
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input & Textarea Fields */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.08); /* Dark glassy field background */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 16px 20px;
+  color: #ffffff;
+  font-size: 1rem;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #a0aec0; /* Soft gray placeholder text */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #70f3ec; /* Cyan accent border on focus */
+}
+
+/* Send Message Cyan Button */
+.send-btn {
+  background-color: #70f3ec; /* Cyan button matching your design */
+  color: #0d1b2a;
+  border: none;
+  border-radius: 25px;
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: flex-start; /* Button left-aligned as in screenshot */
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.send-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  
+}
+footer{
+    padding: 40px;
+   text-align: center;
+}
+footer p{
+  padding: 10px;
+  }
